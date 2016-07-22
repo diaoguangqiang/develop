@@ -1,0 +1,27 @@
+MySQL安装文件分为两种，一种是msi格式的，一种是zip格式的。如果是msi格式的可以直接点击安装，按照它给出的安装提示进行安装（相信大家的英文可以看懂英文提示），一般MySQL将会安装在C:\Program Files\MySQL\MySQL Server 5.6 该目录中；zip格式是自己解压，解压缩之后其实MySQL就可以使用了，但是要进行配置。
+2
+解压之后可以将该文件夹改名，放到合适的位置，个人建议把文件夹改名为MySQL Server 5.6，放到C:\Program Files\MySQL路径中。当然你也可以放到自己想放的任意位置。
+3
+完成上述步骤之后，很多用户开始使用MySQL，但会出现图示的错误。这是因为没有配置环境变量所致。配置环境变量很简单：
+我的电脑->属性->高级->环境变量
+选择PATH,在其后面添加: 你的mysql bin文件夹的路径 (如:C:\Program Files\MySQL\MySQL Server 5.6\bin )
+PATH=.......;C:\Program Files\MySQL\MySQL Server 5.6\bin (注意是追加,不是覆盖)
+4
+配置完环境变量之后先别忙着启动mysql，我们还需要修改一下配置文件（如果没有配置，之后启动的时候就会出现图中的错误哦！:错误2 系统找不到文件），mysql-5.6.1X默认的配置文件是在C:\Program Files\MySQL\MySQL Server 5.6\my-default.ini，或者自己建立一个my.ini文件，
+在其中修改或添加配置（如图）： 
+[mysqld] 
+basedir=C:\Program Files\MySQL\MySQL Server 5.6（mysql所在目录） 
+datadir=C:\Program Files\MySQL\MySQL Server 5.6\data （mysql所在目录\data）
+5
+以管理员身份运行cmd（一定要用管理员身份运行，不然权限不够），
+输入：cd C:\Program Files\MySQL\MySQL Server 5.6\bin 进入mysql的bin文件夹(不管有没有配置过环境变量，也要进入bin文件夹，否则之后启动服务仍然会报错误2)
+输入mysqld -install(如果不用管理员身份运行，将会因为权限不够而出现错误：Install/Remove of the Service Denied!) 
+安装成功
+6
+安装成功后就要启动服务了，继续在cmd中输入:net start mysql（如图）,服务启动成功！
+此时很多人会出现错误，请看注意：
+注意：这个时候经常会出现错误2和错误1067。
+如果出现“错误2 系统找不到文件”，检查一下是否修改过配置文件或者是否进入在bin目录下操作，如果配置文件修改正确并且进入了bin文件夹，需要先删除mysql（输入 mysqld -remove）再重新安装（输入 mysqld -install）；
+如果出现错误1067，那就是配置文件修改错误，确认一下配置文件是否正确。
+7
+服务启动成功之后，就可以登录了，如图，输入mysql -u root -p（第一次登录没有密码，直接按回车过）,登录成功！
