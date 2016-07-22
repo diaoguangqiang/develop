@@ -1,0 +1,3 @@
+find ./ -name "*" -exec grep -n "xxx*" --color ./ {} \;
+
+find ./* -name "xxx"
