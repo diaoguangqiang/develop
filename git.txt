@@ -1,0 +1,36 @@
+一、
+拉分支
+git branch A
+
+切换分支
+git checkout A
+
+添加文件
+git add .
+
+上传
+git push origin A
+
+
+网络合并
+
+
+下拉
+git fetch origin master
+
+
+下拉并合并
+git pull origin master
+
+
+查看
+git branch --all
+
+
+二、或者 
+
+本地合并
+git merge A
+
+//上传
+git push origin master
