@@ -1,0 +1,69 @@
+<body>
+
+<!---->
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+	
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+			                    data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a class="navbar-brand active" href="#"><font color="#ffffff"><{$title}></font></a>
+		</div>
+	
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<!--
+				<li class="active"><a href="#"><{$title}></a></li>
+				-->
+				
+				<li class="dropdown active">
+					<a href="#" class="dropdown-toggle " data-toggle="dropdown"><{$persion_info}><span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class="dropdown-header"><{$account}></li>
+						<li><a href="#"><{$account_change}></a></li>			
+						<li class="divider"></li>
+						<li class="dropdown-header"><{$passwd}></li>
+						<li><a href="#"><{$passwd_change}></a></li>
+						
+					</ul>
+				</li>
+				
+				<li class="dropdown active">
+					<a href="#" class="dropdown-toggle " data-toggle="dropdown"><{$sys_set}><span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class="dropdown-header"><{$school_name}></li>
+						<li><a href="#"><{$my_school_name}></a></li>
+					</ul>
+				</li>
+				
+				<li class="active"><a href="#" ><{$doc}></a></li>
+				
+				<li class="active"><a href="__URL__/loginout" ><{$quit}></a></li>
+			
+			</ul>
+		
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#"><{$service}></a></li>
+				
+			</ul>
+			
+			<!--
+			<form class="navbar-form navbar-right" role="search">
+			<div class="form-group">
+			<input type="text" class="form-control" placeholder="�û���...">
+			<input type="text" class="form-control" placeholder="����...">
+			</div>
+			<button type="submit" class="btn btn-default">��¼</button>
+			</form>
+			-->
+		
+		</div>
+	</div>
+</nav>
+
