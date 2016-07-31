@@ -1,0 +1,83 @@
+<include file="default:global:layout_head" />
+
+<include file="default:global:layout_head_menu" />
+
+<!-- right -->
+<div class="container-fluid">
+	<div class="row">
+
+		<!-- left menu -->
+		<include file="default:global:layout_body_left_menu" />
+		<!-- / left menu -->
+		
+		<!-- right content -->
+		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			
+			<!-- head -->
+			<h3 class="page-header"><{$bank}>&nbsp;<i class="service-icon fa fa-angle-right"></i>&nbsp;<{$practice}></h3>
+			<!-- / head -->
+			
+			<!--  bank  -->
+			<div class="row">
+			
+				<volist name='list' id='vo'>	
+					<!--  -->
+					<div class="col-md-4">
+						<!--panel-->
+						<div class="panel panel-primary">
+						
+						<!--panel-->
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<{$vo.name}>
+							</h3>
+						</div>
+						
+						<!--panel-->
+						<div class="panel-body" align="center" >
+							<table class="table">
+								<thead>
+									<tr>
+										<th>&nbsp;</th>
+										<th><{$num}></th>
+										
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td><{$xzt}></td>
+										<td><{$vo.cnum}></td>
+										
+									</tr>
+									
+									<tr>
+										<td><{$pdt}></td>
+										<td><{$vo.jnum}></td>
+										
+									</tr>
+								
+									<tr>
+										<td><{$zgt}></td>
+										<td><{$vo.snum}></td>										
+									</tr>
+									
+								</tbody>
+							</table>
+						
+							<p><a class="btn btn-success navbar-right" href="__URL__/choiceDo?pid=<{$vo.id}>&p=1" role="button"><{$xuexi}>&nbsp;&raquo;</a></p>
+						
+						</div>		
+						
+						</div>
+					</div>		
+				</volist>				
+			</div>
+			<!-- / bank  -->
+		</div>
+		<!-- /right content -->		
+	</div>
+</div>
+<!-- / right -->
+
+<include file="default:global:layout_foot" />

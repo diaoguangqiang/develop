@@ -1,0 +1,125 @@
+<include file="default:global:layout_head" />
+
+<include file="default:global:layout_head_menu" />
+
+<!-- right -->
+<div class="container-fluid">
+	<div class="row">
+
+		<!-- left menu -->
+		<include file="default:global:layout_body_left_menu" />
+		<!-- / left menu -->
+		
+		<!-- right content -->
+		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">	
+			
+			<!-- head -->
+			<h3 class="page-header">
+				<{$bank}>
+			</h3>
+			<!-- / head -->
+			
+			<!-- head -->
+			<p>
+				<!-- button group -->
+				<button type="button" class="btn btn-default">操作1</button>
+				<button type="button" class="btn btn-default">操作1</button>
+				<button type="button" class="btn btn-default">操作1</button>
+				
+				<!-- / button group -->
+			</p>
+			<!-- / head -->
+			
+			<div class="row">	
+				<div class="col-md-12">
+				
+					<!--panel閿熸枻鎷锋竟顒婃嫹閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷蜂竴浜涢敓鎴》鎷烽敓鏂ゆ嫹閿熸枻鎷峰悓-->
+					<div class="panel panel-primary">
+					
+						<!--panel閿熸枻鎷烽敓渚ユ唻鎷烽敓瑙ｏ紝閿熸枻鎷峰悓-->
+						<div class="panel-heading">
+						<h3 class="panel-title"><{$notice}></h3>
+						</div>
+					
+						<!--panel閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鎹凤綇鎷烽敓鏂ゆ嫹鍚�-->
+						<div class="panel-body">
+						
+							<div class="alert alert-success" role="alert">
+								<p><strong>1. &nbsp;</strong><{$ip}><br>
+								<p><strong>2. &nbsp;</strong><{$last_time}><br>
+							</div>
+						
+						</div>
+					
+					</div>
+				
+				</div>
+			</div>
+			
+			<!--  bank  -->
+			<div class="row">
+			
+				<volist name='list' id='vo'>	
+				
+				
+					<!-- 1 -->
+					<div class="col-md-4">
+						<!--panel-->
+						<div class="panel panel-primary">
+						
+						<!--panel-->
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								g<{$vo.name}>
+							</h3>
+						</div>
+						
+						<!--panel-->
+						<div class="panel-body" align="center" >
+							<table class="table">
+								<thead>
+									<tr>
+										<th>&nbsp;</th>
+										<th>g<{$num}></th>
+										
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td>g<{$xzt}></td>
+										<td>g<{$vo.cnum}></td>
+										
+									</tr>
+									
+									<tr>
+										<td><{$pdt}></td>
+										<td><{$vo.jnum}></td>
+										
+									</tr>
+								
+									<tr>
+										<td><{$zgt}></td>
+										<td><{$vo.snum}></td>
+										
+									</tr>
+									
+								</tbody>
+							</table>
+						
+							<p><a class="btn btn-success navbar-right" href="__URL__/practiceDo" role="button"><{$xuexi}>&nbsp;&raquo;</a></p>
+						
+						</div>		
+						
+						</div>
+					</div>		
+				</volist>				
+			</div>
+			<!-- / bank  -->
+		</div>
+		<!-- /right content -->		
+	</div>
+</div>
+<!-- / right -->
+
+<include file="default:global:layout_foot" />

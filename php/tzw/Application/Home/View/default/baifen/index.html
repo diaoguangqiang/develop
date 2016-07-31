@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title><{$title}></title>
+    <!-- Bootstrap core CSS -->
+    <link href="__PUBLIC_HOME__/css/bootstrap.css" rel="stylesheet">
+    <!-- Add custom CSS here -->
+    <link href="__PUBLIC_HOME__/css/slidefolio.css" rel="stylesheet">
+	<!-- Font Awesome -->
+    <link href="__PUBLIC_HOME__/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+ 
+
+<body>
+
+    
+	  <div id="nav">
+	  
+    <!-- Navigation -->
+    <nav class="navbar navbar-new" role="navigation">
+    
+   <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobilemenu">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+	<a href="#" class="navbar-brand"><{$title}></a>
+  </div>
+  <div class="collapse navbar-collapse" id="mobilemenu">
+
+	  <ul class="nav navbar-nav navbar-right text-center">
+	    <li><a href="__ROOT__/index.php/#top"><i class="service-icon fa fa-home"></i>&nbsp;<{$home}></a></li>
+	    <li><a href="#about"><i class="service-icon fa fa-info"></i>&nbsp;<{$baifen}></a></li>
+        <li><a href="__ROOT__/index.php/download"><i class="service-icon fa fa-cloud-download"></i>&nbsp;<{$download}></a></li>              
+        <li><a href="#contact"><i class="service-icon fa fa-envelope"></i>&nbsp;<{$contact}></a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+    <!-- /Navigation -->
+</div>	
+
+   
+    <!-- Services -->
+    <div id="services" class="services">
+      <div class="container">
+      
+      	<!-- row -->
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2><{$download_area}></h2>
+            <hr>
+          </div>
+        </div>
+        <!-- /row -->
+        
+        <!-- 介绍区域 -->
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-camera-retro fa-3x"></i>
+              <h3><{$web_exam}></h3>
+              <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;<{$web_desc}></p>
+            </div>
+          </div>
+          
+          <div class="col-md-4 text-center">
+            <div class="service-item">
+			<i class="service-icon fa fa-camera fa-3x"></i>
+              <h3><{$app_exam}></h3>
+              <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;<{$app_desc}></p>
+            </div>
+          </div>
+          
+          <div class="col-md-4 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-globe fa-3x"></i>
+              <h3><{$desktop_exam}></h3>
+              <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;<{$desktop_desc}></p>
+            </div>
+          </div>
+          
+        </div>
+        <!-- /row -->
+        
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2><{$download_public}></h2>
+            <hr>
+          </div>
+        </div>
+        <!-- /row -->
+        
+        <!-- 通用版本 -->
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-4 text-left">
+            <div class="service-item">
+              	<div class="wid-header">
+					<h5><{$version_web_list}></h5>
+				</div>
+				<hr>
+				<div class="widget-content">
+					<div class="row">
+						<ul>							
+							<li>&raquo; <{$web_v}> &nbsp;<{$download}></li>												
+						</ul>
+					</div>
+				</div>
+				
+            </div>
+          </div>
+          
+          <div class="col-md-4 text-left">
+            <div class="service-item">
+				<div class="wid-header">
+					<h5><{$version_app_list}></h5>
+				</div>
+				<hr>
+				<div class="widget-content">
+					<div class="row">
+						<ul>
+							<li><a href="__ROOT__/index.php/app/androidDown">&raquo; <{$app_android_v}> &nbsp;<{$download}></a></li><hr>
+							<li>&raquo; <{$app_ios_v}> &nbsp;<{$download}></li><hr>
+							
+						</ul>
+					</div>
+				</div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 text-left">
+            <div class="service-item">
+              	<div class="wid-header">
+					<h5><{$version_desktop_list}></h5>
+				</div>
+				<hr>
+				<div class="widget-content">
+					<div class="row">
+						<ul>							
+							<li>&raquo; <{$desktop_v}> &nbsp;<{$download}></li>
+							
+						</ul>
+					</div>
+				</div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- /row -->
+        
+        <!-- 定制版本 -->
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2><{$download_private}></h2>
+            <hr>
+          </div>
+        </div>
+        <!-- /row -->
+                
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-4 text-left">
+            <div class="service-item">
+            
+              	<div class="wid-header">
+					<h5><{$version_web_under_list}></h5>
+				</div>
+				<hr>
+				<div class="widget-content">
+					<div class="row">
+						<ul>							
+							<li><a href="__ROOT__/index.php/WebUnder/DownZjlgBV101">&raquo; <{$web_zlg_ben_v101}> &nbsp;<{$download}></a></li><hr>
+							<li><a href="__ROOT__/index.php/WebUnder/DownZjlgBV102">&raquo; <{$web_zlg_ben_v102}> &nbsp;<{$download}></a></li><hr>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="wid-header">
+					<h5><{$version_web_post_list}></h5>
+				</div>
+				<hr>
+				<div class="widget-content">
+					<div class="row">
+						<ul>							
+							<li><a href="__ROOT__/index.php/WebPost/DownZjlgYV101">&raquo; <{$web_zlg_yan_v101}> &nbsp;<{$download}></a></li><hr>
+							<li><a href="__ROOT__/index.php/WebPost/DownZjlgYV102">&raquo; <{$web_zlg_yan_v102}> &nbsp;<{$download}></a></li><hr>								 
+							<li><a href="__ROOT__/index.php/WebPost/DownZjsfYV101">&raquo; <{$web_zsd_yan_v101}> &nbsp;<{$download}></a></li><hr>							
+						</ul>
+					</div>
+				</div>
+				
+            </div>
+          </div>
+          
+          <div class="col-md-4 text-left">
+            <div class="service-item">
+				<div class="wid-header">
+					<h5><{$version_app_list}></h5>
+				</div>
+				<hr>
+				<div class="widget-content">
+					<div class="row">
+						<ul>
+							<li><a href="__ROOT__/index.php/app/DownZjsfAndroidV101">&raquo; <{$app_zjsf_android_v101}> &nbsp;<{$download}></a></li><hr>
+							 
+							<li>&raquo; <{$app_zjsf_ios_v101}> &nbsp;<{$download}></li><hr>
+							
+						</ul>
+					</div>
+				</div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 text-left">
+            <div class="service-item">
+              	<div class="wid-header">
+					<h5><{$version_desktop_list}></h5>
+				</div>
+				<hr>
+				<div class="widget-content">
+					<div class="row">
+						<ul>
+							<!-- 
+							<li>&raquo; <{$desktop_v1}> &nbsp;<{$download}></li><hr>
+							-->
+						</ul>
+					</div>
+				</div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- /row -->
+        
+      </div>
+    </div>
+    <!-- /Services -->
+
+	
+   
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+           <h2>Thank You</h2>
+           <em>Copyright &copy; Company 2012 <{$HZ}></em>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="__PUBLIC_HOME__/js/jquery.js"></script>
+	<script src="__PUBLIC_HOME__/js/jquery-scrolltofixed-min.js"></script>
+	<script src="__PUBLIC_HOME__/js/jquery.vegas.js"></script>
+	<script src="__PUBLIC_HOME__/js/jquery.mixitup.min.js"></script>
+	<script src="__PUBLIC_HOME__/js/jquery.validate.min.js"></script>
+	<script src="__PUBLIC_HOME__/js/script.js"></script>
+	<script src="__PUBLIC_HOME__/js/bootstrap.js"></script>
+
+<!-- Mixitup : Grid -->
+    <script>
+		$(function(){
+    $('#Grid').mixitup();
+      });
+    </script>
+<!-- /Mixitup : Grid -->	
+
+    <!-- Custom JavaScript for Smooth Scrolling - Put in a custom JavaScript file to clean this up -->
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+    
+<!-- Navbar -->
+<script type="text/javascript">
+$(document).ready(function() {
+        $('#nav').scrollToFixed();
+  });
+    </script>
+<!-- /Navbar-->
+	
+  </body>
+
+</html>

@@ -1,0 +1,27 @@
+<!--�Ҳ�������̨-->
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	<br>
+	<h1 class="page-header">欢迎<{$_SESSION['user']['username']}>进入后台管理系统</h1>
+	
+	<div class="row">	
+		<div class="col-md-12">		
+			<!--panel��壬�������һЩ�ؼ�����ͬ-->
+			<div class="panel panel-primary">			
+				<!--panel���ı��⣬��ͬ-->
+				<div class="panel-heading">
+					<h3 class="panel-title">信息</h3>
+				</div>
+							
+				<!--panel�������ݣ���ͬ-->
+				<div class="panel-body">				
+					<div class="alert alert-success" role="alert">
+						<p><strong>1、</strong>登陆IP: <{$_SESSION['user']['ip']}><br>
+						<p><strong>2、</strong>登陆时间: <{$_SESSION['user']['last_login_time']}><br>
+						<p><strong>3、</strong>登陆次数: <{$_SESSION['user']['login_times']}><br>
+						
+					</div>				
+				</div>			
+			</div>		
+		</div>
+	</div>
+</div>

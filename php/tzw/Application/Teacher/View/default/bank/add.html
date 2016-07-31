@@ -1,0 +1,71 @@
+<include file="default:global:layout_head" />
+
+<include file="default:global:layout_head_menu" />
+
+<!--right -->
+<div class="container-fluid">
+	<div class="row">
+	
+		<!--left menu-->
+		<include file="default:global:layout_body_left_menu" />
+		<!-- /left menu -->
+	
+		<!--rigt content-->
+		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			
+			<!-- head -->
+			<h3 class="page-header"><{$bank}>&nbsp;<i class="service-icon fa fa-angle-right"></i>&nbsp;<{$view_bank}></h3>
+			<!-- / head -->
+			
+			<!-- row -->
+			<div class="row">	
+				<div class="col-md-12">
+					<!-- A -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<span class="badge pull-right"> <!-- <a href="__ROOT__" > --><{$num_bank_limit_info}><!-- </a>  --> </span><{$add_info}>
+							</h3>					
+						</div>
+						
+						<!-- B -->
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-4">&nbsp;</div>
+								<div class="col-md-4">
+									<h4><{$bank_name}></h4>
+									<form  role="form" action="__URL__/addName" method="post">
+										<div class="form-group has-success">
+											<input type="text" class="form-control" name="name" id="inputSuccess1" placeholder="<{$bank_name_input_please}>">
+											<h6><{$bank_name_input_tips}></h6>
+										</div>
+										<div class="form-group">
+											<button type="submit" class="btn btn-default"><{$submit}></button>
+										</div>										
+									</form>	
+								</div>
+								<div class="col-md-4">&nbsp;</div>
+							</div>
+							
+						</div>
+						<!-- / B -->
+						
+					</div>
+					<!-- / A -->
+				</div>
+			</div>
+			<!-- / row -->
+			
+			<!-- 
+			<div class="row">
+				ss
+			</div>
+			 -->
+			 
+		</div>
+		<!-- / rigt content-->
+	</div>
+</div>
+<!-- / right -->
+
+<include file="default:global:layout_foot" />

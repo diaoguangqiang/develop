@@ -15,7 +15,9 @@
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 
 // 寮�鍚皟璇曟ā寮� 寤鸿寮�鍙戦樁娈靛紑鍚� 閮ㄧ讲闃舵娉ㄩ噴鎴栬�呰涓篺alse
-define('APP_DEBUG',True);
+define('APP_DEBUG',true);
+
+define('APP_NAME', 'Home');
 
 // 绑定访问Admin模块
 define('BIND_MODULE','Home');
@@ -25,6 +27,8 @@ define('BIND_MODULE','Home');
 
 // 瀹氫箟搴旂敤鐩綍
 define('APP_PATH','./Application/');
+
+//define('BUILD_LITE_FILE',true);
 
 // 寮曞叆ThinkPHP鍏ュ彛鏂囦欢
 require './ThinkPHP/ThinkPHP.php';

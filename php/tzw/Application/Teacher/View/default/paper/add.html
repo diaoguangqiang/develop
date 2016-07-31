@@ -1,0 +1,122 @@
+<include file="default:global:layout_head" />
+
+<include file="default:global:layout_head_menu" />
+
+<!--right -->
+<div class="container-fluid">
+	<div class="row">
+	
+		<!--left menu-->
+		<include file="default:global:layout_body_left_menu" />
+		<!-- /left menu -->
+	
+		<!--rigt content-->
+		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			
+			<!-- head -->
+			<h3 class="page-header"><{$paper}>&nbsp;<i class="service-icon fa fa-angle-right"></i>&nbsp;<{$paper_add}></h3>
+			<!-- / head -->
+			
+			<!-- row -->
+			<div class="row">	
+				<div class="col-md-12">
+					<!-- A -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<span class="badge pull-right"> <!-- <a href="__ROOT__" > --><{$num_paper_limit_info}><!-- </a>  --> </span><{$add_info}>
+							</h3>					
+						</div>
+						
+						<!-- B -->
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-3">&nbsp;</div>
+								<div class="col-md-6">
+									
+									<form class="form-horizontal" role="form" action="__URL__/addName" method="post">
+										
+										<div class="control-group">											
+											<label class="control-label" ><{$paper_name}></label>
+											<input type="text"  name="name" placeholder="<{$paper_name_input_please}>">
+											<h6><{$paper_name_input_tips}></h6>
+										</div>
+										
+										<div class="control-group">
+								            <label class="control-label" for="multiSelect"><{$paper_name_select}></label>
+								            <select multiple="multiple" id="multiSelect" class="form-control">
+								                <volist name='list' id='vo' key="k">
+								                	<if condition="$k eq 1">								                	
+								                		<option value="<{$vo.id}>" selected><{$vo.name}></option>
+								                	<else />
+								                		<option value="<{$vo.id}>" ><{$vo.name}></option>
+								                	</if>
+								                </volist>
+								            </select>
+								            <h6><{$paper_name_limit_tips}></h6>
+							          	</div>
+          
+          								<!-- 
+										<div class="control-group">
+								            <label class="control-label" ><{$paper_name_select}></label>
+								            <select class="form-control">
+										         <option selected><{$paper_name}></option>
+										         <option>2</option>
+										         <option>3</option>
+										         <option>4</option>
+										         <option>5</option>
+									        </select>								            
+								        </div>
+										 -->
+										 
+										<div class="control-group">											
+											<label class="control-label" ><{$xzt}></label>
+											<input type="text" class="span1" name="name" id="inputSuccess1" placeholder="<{$num_tips}>">
+											
+										</div>
+										<br>
+										
+										<div class="control-group">											
+											<label class="control-label" ><{$pdt}></label>
+											<input type="text" class="span1" name="name" id="inputSuccess1" placeholder="<{$num_tips}>">
+											
+										</div>
+										<br>
+										
+										<div class="control-group">											
+											<label class="control-label" ><{$zgt}></label>
+											<input type="text" class="span1" name="name" id="inputSuccess1" placeholder="<{$num_tips}>">
+											
+										</div>
+										 <hr>
+																				
+										<div class="control-group pull-right">											
+											<button type="submit" class="btn btn-success"><{$submit}></button>
+										</div>										
+									</form>	
+								</div>
+								<div class="col-md-3">&nbsp;</div>
+							</div>
+							
+						</div>
+						<!-- / B -->
+						
+					</div>
+					<!-- / A -->
+				</div>
+			</div>
+			<!-- / row -->
+			
+			<!-- 
+			<div class="row">
+				ss
+			</div>
+			 -->
+			 
+		</div>
+		<!-- / rigt content-->
+	</div>
+</div>
+<!-- / right -->
+
+<include file="default:global:layout_foot" />
