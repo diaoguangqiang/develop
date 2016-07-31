@@ -25,12 +25,7 @@ return array(
 	//鏁版嵁搴撻厤缃俊鎭�
 	'DB_TYPE'   => 'mysql', 
 	
-	/*
-	'DB_HOST'   => 'hdm-126.hichina.com', 
-	'DB_NAME'   => 'hdm1260614_db',
-	'DB_USER' => 'hdm1260614',
-	'DB_PWD'    => 'diaoguangqiang',
-	*/
+	
 	
 	// 鏁版嵁搴撶被鍨�
 	'DB_HOST'   => 'localhost', 
