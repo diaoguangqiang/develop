@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+	        android:id="@+id/srollView"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+				
+	            <com.eschool.app.widget.ExamGridView
+	                android:id="@+id/gv_exam_gridview"
+	                android:layout_width="match_parent"
+	                android:layout_height="284dp"
+	                android:horizontalSpacing="1dp"
+	                android:numColumns="3"
+	                android:background="#E5E5E5"
+	                android:stretchMode="columnWidth"
+	                android:verticalSpacing="1dp" />	                 
+	                 
+	        </LinearLayout>
+	    </ScrollView>
+   
+    </FrameLayout>
+
+</LinearLayout>

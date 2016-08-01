@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl_exam_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/ll_exam_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+
+                <TextView
+                    android:id="@+id/tv_exam_loaing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="正在刷新题库..." />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_exam_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll_loading"
+                android:background="@android:color/transparent"
+                android:footerDividersEnabled="false"
+                android:descendantFocusability="afterDescendants"
+                android:fastScrollEnabled="false" />
+         
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

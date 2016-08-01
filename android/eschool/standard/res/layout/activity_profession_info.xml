@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_top_bar_blue" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/top_bar_back" />
+
+        <View
+            android:id="@+id/view_temp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:background="#14191A" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/view_temp"
+            android:text="题目"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="@dimen/height_top_bar"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_wallet_more"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+        
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+       	android:layout_alignParentBottom="true"
+        android:background="@color/common_top_bar_blue" >
+
+        <TextView
+            android:id="@+id/tv_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentLeft="true"         
+            android:text="上 一 题"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:clickable="true"
+            
+             />
+        
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:text="下 一 题"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:clickable="true"
+           
+             />
+    </RelativeLayout>
+    
+    <RelativeLayout       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_title"
+        android:layout_above="@id/rl_bottom"
+         >
+        
+        <TextView
+            android:id="@+id/tv_problem"     
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"                 
+            android:text="问题：int i1 = '1234';int i2 = '\\1\\2\\3\\4';这两个值是多少，内存中是怎么样存储的？"            
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        
+        <RadioGroup
+            android:id="@+id/rg_answer"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"             
+            android:contentDescription="答案"
+            android:layout_below="@id/tv_problem"            
+            >
+            
+            <RadioButton 
+                android:id="@+id/rb_A" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"   
+                android:layout_marginLeft="5dp"                               
+                android:text="测试答案1" 
+                android:textColor="#000000"
+                >                
+            </RadioButton> 
+            
+			<RadioButton 
+			    android:id="@+id/rb_B" 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 	
+			    android:layout_marginLeft="5dp" 		    
+			    android:text="测试答案2" 
+			    android:textColor="#000000"
+			   	 >			    
+			</RadioButton> 
+			
+			<RadioButton 
+                android:id="@+id/rb_C" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"                                  
+                android:text="测试答案3" 
+                android:textColor="#000000"
+                 >                
+            </RadioButton> 
+            
+			<RadioButton 
+			    android:id="@+id/rb_D" 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 		
+			    android:layout_marginLeft="5dp" 	    
+			    android:text="测试答案4" 
+			    android:textColor="#000000"
+			    >			    
+			</RadioButton> 
+           
+        </RadioGroup>
+        
+    </RelativeLayout>
+
+</RelativeLayout>
